@@ -21,7 +21,7 @@
     color: #424242;
 }
 
-/* darkc03 */
+/* dark03 */
 
 .text-light-gray {
     color: #727272;
@@ -46,7 +46,7 @@ main {
     margin: 0 auto;
 }
 
-main > section {
+main>section {
     margin-top: 130px;
 }
 
@@ -126,35 +126,36 @@ main > section {
 
 /* some facts related styles */
 
-.facts-container{
+.facts-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-.fact-card{
-    border:1px solid #FF900E ;
+.fact-card {
+    border: 1px solid #FF900E;
     width: 240px;
     height: 240px;
     border-radius: 8px;
     align-items: center;
     text-align: center;
     justify-content: center;
+
 }
 
-.fact-number{
+.fact-number {
     font-size: 2.8rem;
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 10px;
 }
 
-.fact-name{
+.fact-name {
     font-size: 1.25rem;
     font-weight: 600;
     margin-top: 10px;
 }
 
-.fact-description{
+.fact-description {
     max-width: 540px;
 }
 
@@ -163,33 +164,77 @@ main > section {
 
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .footer-section {
         flex-direction: column;
     }
 
-    .team-image-container, .facts-container {
+    .team-image-container,
+    .facts-container, .sponsor-companies{
         grid-template-columns: 1fr;
     }
 
-    .facts-container{
+    .facts-container, .sponsor-companies {
         justify-items: center;
         gap: 24px;
     }
 
-    .our-features{
+    .our-features {
         margin-left: 20px;
     }
+    .footer{
+        text-align: center;
+    }
+
 }
 
 /* sponsor related info */
 
+.sponsor-info {
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
 /* medium size device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams {
         flex-direction: column;
     }
 
-    .our-features{
+    .our-features {
         margin-left: 50px auto;
     }
+}
+
+/* footer section */
+
+.footer-section {
+    background-color: rgb(255, 244, 231);
+    width: 1540px;
+    height: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.footer-description {
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: center;
 }
